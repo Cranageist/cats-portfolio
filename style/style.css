@@ -19,14 +19,15 @@ h1 {
   margin: 0px;
 }
 
-/* .center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
+.container {
+  display: flex;
+  height: 100%;
+  padding: 0 80px 0 80px;
+}
+
+.flex {
+  display: flex;
+}
 
 /* Navigation Bar CSS */
 nav {
@@ -71,6 +72,7 @@ nav > div > .nav_links {
 
 .home_section > .container {
   display: flex;
+  padding: 0;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -144,9 +146,6 @@ nav > div > .nav_links {
 }
 
 .about_section > .container {
-  display: flex;
-  height: 100%;
-  padding: 0 80px 0 80px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -161,6 +160,71 @@ nav > div > .nav_links {
   font-size: 20px;
 }
 
-/* Resume Section CSS */
+/* Famous Cats Section CSS */
+.famousCats_section {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(100, 100, 100, 1) 100%
+  );
+  height: 1600px;
+  overflow: hidden;
+}
 
-/* Contact Section CSS */
+.famousCats_section > .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.famousCats_header {
+  font-size: 40px;
+  margin: 100px;
+}
+
+.famousCats_content {
+  width: 100%;
+}
+
+.famousCats_content-1,
+.famousCats_content-3 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.famousCats_content-2 {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.famousCats_content-1_image > img,
+.famousCats_content-2_image > img,
+.famousCats_content-3_image > img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.famousCats_content-1_image,
+.famousCats_content-2_image,
+.famousCats_content-3_image {
+  margin: 50px;
+}
+
+.famousCats_content-1_caption,
+.famousCats_content-2_caption,
+.famousCats_content-3_caption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.famousCats_content-1_description,
+.famousCats_content-2_description,
+.famousCats_content-3_description {
+  text-align: justify;
+  margin: 70px;
+  width: 6 0%;
+  font-size: 20px;
+}
